@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>활용데이터 목록 (Track1) - 복합 극한기후 현상의 사회·경제적 취약성 연구</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            font-size: 10pt;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            padding: 25mm 20mm;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-left {
+            font-size: 10pt;
+            color: #666;
+        }
+        .header-right {
+            font-size: 10pt;
+            color: #333;
+        }
+        .title-box {
+            background: #1a365d;
+            color: white;
+            padding: 8px 15px;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        .title-box h1 {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        .note {
+            font-size: 9pt;
+            color: #666;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 3px solid #ccc;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 9pt;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #e8e8e8;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .center {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .data-type {
+            text-align: center;
+            font-weight: bold;
+        }
+        .data-type.public {
+            color: #2563eb;
+        }
+        .data-type.synthetic {
+            color: #dc2626;
+        }
+        .url {
+            word-break: break-all;
+            color: #2563eb;
+            font-size: 8pt;
+        }
+        .description {
+            line-height: 1.5;
+        }
+        .description ul {
+            margin: 5px 0 0 15px;
+            padding: 0;
+        }
+        .description li {
+            margin-bottom: 3px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            font-size: 10pt;
+            color: #666;
+        }
+        .page-num {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 10pt;
+            color: #666;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 -->
+        <div class="header">
+            <div class="header-left">과학기술정보통신부</div>
+            <div class="header-right">「2026 AI Co-Scientist Challenge Korea」</div>
+        </div>
+
+        <!-- 제목 -->
+        <div class="title-box">
+            <h1>별첨1-5 [제출물 양식] 활용데이터 목록 (Track1)</h1>
+        </div>
+
+        <!-- 안내문 -->
+        <div class="note">
+            ※ (제출 시, 삭제) 제출된 자료(논문 및 AI Agent를 제외한 자료, 예: AI 활용보고서, 활용데이터 목록 등)는 심사 목적으로만 사용될 예정이며, 외부로 반출되지 않습니다.
+        </div>
+
+        <!-- 데이터 목록 테이블 -->
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:5%">연번</th>
+                    <th style="width:45%">데이터 개요</th>
+                    <th style="width:15%">데이터 구분<br>(공공/개인/AI 합성)</th>
+                    <th style="width:35%">데이터 수집경로<br>(AI 합성 방법)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 1. 기상관측 데이터 -->
+                <tr>
+                    <td class="center">1</td>
+                    <td class="description">
+                        <strong>▪ 기상관측 데이터 (종관기상관측)</strong>
+                        <ul>
+                            <li>일별 기상관측 데이터 (기온, 강수량, 습도, 기압, 풍속)</li>
+                            <li>수집 기간: 2000-2023년 (24년간)</li>
+                            <li>수집 지점: 전국 95개 관측소</li>
+                            <li>데이터 규모: 약 175,320 레코드</li>
+                            <li>활용 목적: 극한기후 이벤트 식별, 복합 이벤트 탐지</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://data.kma.go.kr/</span><br><br>
+                        기상청 기상자료개방포털<br>
+                        (기상청_종관기상관측(ASOS) 일자료)
+                    </td>
+                </tr>
+
+                <!-- 2. ERA5 재분석 데이터 -->
+                <tr>
+                    <td class="center">2</td>
+                    <td class="description">
+                        <strong>▪ ERA5 재분석 데이터</strong>
+                        <ul>
+                            <li>전지구 격자 기후 재분석 데이터</li>
+                            <li>해상도: 0.25° × 0.25° (약 25km)</li>
+                            <li>수집 기간: 2000-2023년</li>
+                            <li>변수: 2m 기온, 강수량, 지표면 기압, 상대습도</li>
+                            <li>활용 목적: 관측 공백지역 보완, 대기순환 패턴 분석</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://cds.climate.copernicus.eu/</span><br><br>
+                        Copernicus Climate Data Store<br>
+                        (ERA5 hourly data on single levels)
+                    </td>
+                </tr>
+
+                <!-- 3. 재해피해 통계 -->
+                <tr>
+                    <td class="center">3</td>
+                    <td class="description">
+                        <strong>▪ 재해피해 통계 데이터</strong>
+                        <ul>
+                            <li>자연재해로 인한 인명·재산 피해 통계</li>
+                            <li>수집 기간: 2000-2023년</li>
+                            <li>수집 단위: 시군구별 연간 통계</li>
+                            <li>변수: 사망자 수, 이재민 수, 재산피해액</li>
+                            <li>활용 목적: 사회·경제적 영향 정량화</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://www.mois.go.kr/</span><br><br>
+                        행정안전부 재해연보<br>
+                        (자연재해 피해 현황 통계)
+                    </td>
+                </tr>
+
+                <!-- 4. 건강영향 데이터 -->
+                <tr>
+                    <td class="center">4</td>
+                    <td class="description">
+                        <strong>▪ 건강영향 데이터 (온열·한랭질환)</strong>
+                        <ul>
+                            <li>기후 관련 건강피해 통계</li>
+                            <li>수집 기간: 2011-2023년</li>
+                            <li>수집 단위: 시도별 월간 통계</li>
+                            <li>변수: 온열질환자 수, 한랭질환자 수, 사망자 수</li>
+                            <li>활용 목적: 건강 취약성 평가</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://kosis.kr/</span><br><br>
+                        통계청 KOSIS<br>
+                        (질병관리청 온열질환 응급실감시체계)
+                    </td>
+                </tr>
+
+                <!-- 5. 농업피해 데이터 -->
+                <tr>
+                    <td class="center">5</td>
+                    <td class="description">
+                        <strong>▪ 농업피해 통계 데이터</strong>
+                        <ul>
+                            <li>기상재해로 인한 농작물 피해 통계</li>
+                            <li>수집 기간: 2010-2023년</li>
+                            <li>수집 단위: 시도별 연간 통계</li>
+                            <li>변수: 피해면적(ha), 피해금액(백만원), 피해작물</li>
+                            <li>활용 목적: 농업 부문 경제적 영향 분석</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://kosis.kr/</span><br><br>
+                        통계청 KOSIS<br>
+                        (농림축산식품부 농작물재해통계)
+                    </td>
+                </tr>
+
+                <!-- 6. 인구통계 데이터 -->
+                <tr>
+                    <td class="center">6</td>
+                    <td class="description">
+                        <strong>▪ 인구통계 데이터</strong>
+                        <ul>
+                            <li>시군구별 인구 및 고령인구 통계</li>
+                            <li>수집 기간: 2000-2023년</li>
+                            <li>수집 단위: 시군구별 연간 통계</li>
+                            <li>변수: 총인구, 65세 이상 인구, 인구밀도</li>
+                            <li>활용 목적: 취약계층 민감도 평가</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://kosis.kr/</span><br><br>
+                        통계청 KOSIS<br>
+                        (행정구역별 인구 및 세대)
+                    </td>
+                </tr>
+
+                <!-- 7. 지역 인프라 데이터 -->
+                <tr>
+                    <td class="center">7</td>
+                    <td class="description">
+                        <strong>▪ 지역 인프라 데이터</strong>
+                        <ul>
+                            <li>의료시설, 재해대응 인프라 현황</li>
+                            <li>수집 기간: 2020-2023년</li>
+                            <li>수집 단위: 시군구별</li>
+                            <li>변수: 의료기관 수, 병상 수, 소방서 수</li>
+                            <li>활용 목적: 적응역량(Adaptive Capacity) 평가</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://kosis.kr/</span><br><br>
+                        통계청 KOSIS<br>
+                        (의료기관 현황, 소방청 통계)
+                    </td>
+                </tr>
+
+                <!-- 8. 재정자립도 데이터 -->
+                <tr>
+                    <td class="center">8</td>
+                    <td class="description">
+                        <strong>▪ 지방재정 데이터</strong>
+                        <ul>
+                            <li>시군구별 재정자립도 및 재정력지수</li>
+                            <li>수집 기간: 2010-2023년</li>
+                            <li>수집 단위: 시군구별 연간</li>
+                            <li>변수: 재정자립도(%), 재정력지수</li>
+                            <li>활용 목적: 적응역량(Adaptive Capacity) 평가</li>
+                        </ul>
+                    </td>
+                    <td class="data-type public">공공데이터</td>
+                    <td>
+                        <span class="url">▪ https://lofin.mois.go.kr/</span><br><br>
+                        지방재정365<br>
+                        (지방자치단체 재정분석)
+                    </td>
+                </tr>
+
+                <!-- 9. 시뮬레이션 기상 데이터 -->
+                <tr>
+                    <td class="center">9</td>
+                    <td class="description">
+                        <strong>▪ 시뮬레이션 기상 데이터</strong>
+                        <ul>
+                            <li>모델 학습/검증용 합성 기상 시계열</li>
+                            <li>생성 방법: 실제 관측 데이터 기반 Monte Carlo 시뮬레이션</li>
+                            <li>데이터 규모: 10,000 시계열 × 30일</li>
+                            <li>변수: 기온, 강수량, 습도, 기압, 풍속</li>
+                            <li>활용 목적: 모델 학습 데이터 증강</li>
+                        </ul>
+                    </td>
+                    <td class="data-type synthetic">AI 합성데이터</td>
+                    <td>
+                        ▪ AI 합성 방법:<br><br>
+                        1. 실제 관측 데이터의 통계적 분포 추정<br>
+                        2. Copula 함수로 변수 간 의존성 모델링<br>
+                        3. Monte Carlo 샘플링으로 합성 시계열 생성<br>
+                        4. 극한 이벤트 발생 확률 조정<br><br>
+                        ▪ 파일명: data/synthetic/simulated_weather.csv
+                    </td>
+                </tr>
+
+                <!-- 10. 취약성 학습용 합성 데이터 -->
+                <tr>
+                    <td class="center">10</td>
+                    <td class="description">
+                        <strong>▪ 취약성 평가 학습용 합성 데이터</strong>
+                        <ul>
+                            <li>영향 예측 모델 학습용 합성 데이터셋</li>
+                            <li>생성 방법: 실제 피해 데이터 기반 Bootstrap 리샘플링 + 노이즈 추가</li>
+                            <li>데이터 규모: 5,000 레코드</li>
+                            <li>변수: 기후변수, 사회경제변수, 피해규모</li>
+                            <li>활용 목적: 영향 예측 모델 과적합 방지</li>
+                        </ul>
+                    </td>
+                    <td class="data-type synthetic">AI 합성데이터</td>
+                    <td>
+                        ▪ AI 합성 방법:<br><br>
+                        1. 실제 피해 데이터에서 Bootstrap 샘플링<br>
+                        2. Gaussian 노이즈 추가 (σ=0.1)<br>
+                        3. SMOTE로 희귀 클래스 오버샘플링<br>
+                        4. 이상치 필터링 및 정규화<br><br>
+                        ▪ 파일명: data/synthetic/vulnerability_train.csv
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 데이터 요약 -->
+        <table style="margin-top: 30px;">
+            <thead>
+                <tr>
+                    <th colspan="4" style="background:#2c5282; color:white;">데이터 활용 요약</th>
+                </tr>
+                <tr>
+                    <th style="width:25%">구분</th>
+                    <th style="width:25%">데이터 수</th>
+                    <th style="width:25%">주요 출처</th>
+                    <th style="width:25%">비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="center">공공데이터</td>
+                    <td class="center">8개</td>
+                    <td>기상청, KOSIS, 행안부, Copernicus</td>
+                    <td>전량 공개 데이터</td>
+                </tr>
+                <tr>
+                    <td class="center">AI 합성데이터</td>
+                    <td class="center">2개</td>
+                    <td>자체 생성 (공공데이터 기반)</td>
+                    <td>모델 학습/검증용</td>
+                </tr>
+                <tr style="background:#e8f4f8;">
+                    <td class="center"><strong>합계</strong></td>
+                    <td class="center"><strong>10개</strong></td>
+                    <td colspan="2">-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="page-num">- 1 -</div>
+
+        <!-- 푸터 -->
+        <div class="footer">
+            <p>2026 AI Co-Scientist Challenge Korea - Track 1</p>
+            <p>작성일: 2026년 1월</p>
+        </div>
+    </div>
+</body>
+</html>

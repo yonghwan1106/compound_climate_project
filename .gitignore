@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Large data files (excluded for repository size)
+data/raw/
+data/processed/*.nc
+data/processed/*.csv
+*.nc
+*.grib
+*.grib2
+
+# Trained models (too large for git)
+*.pt
+*.pth
+*.h5
+*.pkl
+models/*.pt
+models/*.h5
+results/models/*.pt
+
+# PDF submissions (generated files)
+submission/*.pdf
+submission/**/*.pdf
+submission/*.zip
+submission/**/*.zip
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+nul
+
+# LaTeX auxiliary files
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.bbl
+paper/*.blg
+paper/*.synctex.gz
+
+# Screenshots and temporary images
+캡처.PNG
+*.PNG.tmp
+
+# Copernicus/CDS API credentials
+.cdsapirc
