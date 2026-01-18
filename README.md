@@ -1,6 +1,6 @@
 # Compound Climate Event Vulnerability Analysis
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/yonghwan1106/compound-climate-korea)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/yonghwan1106/compound_climate_project)
 [![Python](https://img.shields.io/badge/Python-3.10+-green?logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
@@ -8,7 +8,7 @@
 
 복합 극한기후 현상의 사회·경제적 취약성 연구를 위한 AI 기반 분석 프레임워크
 
-🔗 **Repository**: https://github.com/yonghwan1106/compound-climate-korea
+🔗 **Repository**: https://github.com/yonghwan1106/compound_climate_project
 
 ## 연구 개요
 

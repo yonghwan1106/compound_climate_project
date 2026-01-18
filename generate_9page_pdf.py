@@ -518,7 +518,7 @@ def create_compact_research_report_pdf(output_path: str, figures_dir: str):
     story.append(Spacer(1, 10))
     story.append(Paragraph("<b>Data and Code Availability</b>", heading2_style))
     data_avail = """
-    Code: https://github.com/yonghwan1106/compound-climate-korea<br/>
+    Code: https://github.com/yonghwan1106/compound_climate_project<br/>
     Raw data: KMA Open Data Portal, Copernicus Climate Data Store (ERA5, CMIP6)
     """
     story.append(Paragraph(data_avail, body_style))
